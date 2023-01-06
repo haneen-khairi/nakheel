@@ -14,10 +14,6 @@
 	<!-- Title -->
 	<title>Royal Commission for Alula Dashboard</title>
 
-
-	<!-- *************
-			************ Common Css Files *************
-		************ -->
 	<!-- Bootstrap css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -27,27 +23,23 @@
 	<!-- Main css -->
 	<link rel="stylesheet" href="css/main.css">
 
-
-	<!-- *************
-			************ Vendor Css Files *************
-		************ -->
 	<!-- DateRange css -->
 	<link rel="stylesheet" href="vendor/daterange/daterange.css" />
 
 	<!-- Chartist css -->
 	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css" />
 	<link rel="stylesheet" href="vendor/chartist/css/chartist-custom.css" />
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
 
 	<!-- Loading starts -->
-	<div id="">
+	<!-- <div id="">
 		<div class="spinner-border" role="status">
 			<span class="sr-only">Loading...</span>
 		</div>
-	</div>
+	</div> -->
 	<!-- Loading ends -->
 
 
@@ -73,110 +65,104 @@
 				<!-- sidebar menu start -->
 				<div class="sidebar-menu">
 					<ul>
-						<li class="header-menu">General</li>
+						<li class="header-menu">Dashboard</li>
 						<li class="">
-							<a href="#">
-								<i class="icon-devices_other"></i>
-								<span class="menu-text">Dashboards</span>
-							</a>
 							<div class="sidebar-submenu">
 								<ul>
 									<li>
-										<a href="index.html" class="current-page"> تحليلات المشروع الكلي</a>
+										<a href="index.html" class="current-page tab-total"><i
+												class="icon-multiline_chart"></i>Project Total Analysis</a>
 									</li>
 									<li>
-										<a href="main-analysis.html">تحليلات العاملين</a>
+										<a href="main-analysis.html" class="tab-total"><i
+												class="icon-pie_chart_outlined"></i>Worker Analysis</a>
 									</li>
 									<li>
-										<a href="super-analysis.html">تحليلات المسؤولين</a>
+										<a href="super-analysis.html" class="tab-total"> <i class="icon-bar-chart"></i>
+											   Supervisor Analysis</a>
 									</li>
 									<li>
-										<a href="qa-analysis.html">تحليلات التقييم </a>
-									</li> 
+										<a href="qa-analysis.html" class="tab-total"> <i class="icon-bar-chart-2"></i>
+											   Estimate Analysis </a>
+									</li>
 								</ul>
 							</div>
 						</li>
-						<li class="">
-							<a href="#">
-								<i class="icon-check-circle"></i>
+						<li>
+							<a href="#" class="main-dash">
+								<i class="icon-user"></i>
 								<span class="menu-text">Supervisor</span>
 							</a>
 							<div class="sidebar-submenu">
 								<ul>
 									<li>
-										<a href="account-settings.html">Account Settings</a>
+										<a href="supervisor/super-task-table.html">Tasks</a>
 									</li>
 									<li>
-										<a href="supervisor/super-task-table.html">المهام</a>
+										<a href="supervisor/super-report-table.html">Complaints Reports</a>
 									</li>
 									<li>
-										<a href="supervisor/super-report-table.html">الشكاوي </a>
+										<a href="supervisor/super-report.html"> Report</a>
 									</li>
 									<li>
-										<a href="supervisor/super-report.html"> التقارير</a>
+										<a href="supervisor/super-supply-table.html"> Supplies Report</a>
 									</li>
-									<li>
-										<a href="supervisor/super-supply-table.html">عرض الموارد</a>
-									</li> 
-									<li>
-										<a href="supervisor/super-db-table.html">قاعدة البيانات</a>
-									</li> 
 								</ul>
 							</div>
 						</li>
-						<li class="">
-							<a href="#">
-								<i class="icon-book-open"></i>
+						<li>
+							<a href="#" class="main-dash">
+								<i class="icon-user-check"></i>
 								<span class="menu-text">Quality controller</span>
 							</a>
 							<div class="sidebar-submenu">
-								<ul> 
+								<ul>
 									<div class="sidebar-submenu">
 										<ul>
 											<li>
-												<a href="qa/qa-water-report.html">مهام الري</a>
+												<a href="qa/qa-water-report.html">Irrigation Tasks</a>
 											</li>
 											<li>
-												<a href="qa/qa-care-report.html"> مهام الرعاية </a>
+												<a href="qa/qa-care-report.html">  Care Tasks</a>
 											</li>
 											<li>
-												<a href="qa/qa-report-table.html"> مهام التقييم </a>
-											</li> 
+												<a href="qa/qa-report-table.html"> Evaluation Report   </a>
+											</li>
 											<li>
-												<a href="qa/qa-more-report.html"> مهام اخرى</a>
-											</li>  
+												<a href="qa/qa-more-report.html">Other Tasks</a>
+											</li>
 										</ul>
 									</div>
 								</ul>
 							</div>
-						</li> 
-						<li class="">
-							<a href="#">
-								<i class="icon-book-open"></i>
+						</li>
+						<li>
+							<a href="#" class="main-dash">
+								<i class="icon-group_add"></i>
 								<span class="menu-text">Worker</span>
 							</a>
 							<div class="sidebar-submenu">
-								<ul> 
+								<ul>
 									<div class="sidebar-submenu">
 										<ul>
 											<li>
-												<a href="worker/worker-task-table.html">عرض المهام </a>
+												<a href="worker/worker-task-table.html"> Tasks </a>
 											</li>
-											 
+
 											<li>
-												<a href="worker/worker-report-table.html">  الشكاوي المقدمة</a>
-											</li>  
+												<a href="worker/worker-report-table.html"> Irrigation Report </a>
+											</li>
 										</ul>
 									</div>
 								</ul>
 							</div>
-						</li> 
-						<li class="">
-							<a href="Map.html">
+						</li>
+						<li>
+							<a href="Map.html" class="main-dash">
 								<i class="icon-map-pin"></i>
 								<span class="menu-text">Map</span>
 							</a>
-						</li> 
+						</li>
 					</ul>
 				</div>
 				<!-- sidebar menu end -->
@@ -184,18 +170,16 @@
 			</div>
 			<!-- Sidebar content end -->
 		</nav>
-		<!-- Si
+		<!-- Sidebar wrapper end -->
+
 		<!-- Page content start  -->
 		<div class="page-content">
 
 			<!-- Header start -->
 			<header class="header">
-				<div class="toggle-btns">
-					<a id="toggle-sidebar" href="#">
-						<i class="icon-list"></i>
-					</a>
+				<div class="toggle-btns"> 
 					<a id="pin-sidebar" href="#">
-						<i class="icon-list"></i>
+						 عربي
 					</a>
 				</div>
 				<div class="header-items">
@@ -308,7 +292,7 @@
 										<div class="header-user">
 											<img src="img/user.png" alt="Admin Template">
 										</div>
-										<h5>ايمن  </h5>
+										<h5>ايمن </h5>
 										<p>Admin</p>
 									</div>
 									<a href="user-profile.html"><i class="icon-user1"></i> My Profile</a>
@@ -327,7 +311,7 @@
 			<div class="page-header">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item">Dashboards</li>
-					<li class="breadcrumb-item active">عرض المهام</li>
+					<li class="breadcrumb-item active">Admin Dashboard</li>
 				</ol>
 
 				<ul class="app-actions">
@@ -353,121 +337,169 @@
 			<!-- Page header end -->
 
 			<!-- Main container start -->
-            
-<div class="main-container">
+			<div class="main-container">
 
-    <!-- Row start -->
-    <div class="row gutters">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<!-- Row start -->
+				<div class="row gutters">
+					<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+						<div class="info-tiles">
+							<a href="indexTree.html">
+							<div class="info-icon">
+								<i class="bi bi-tree"></i>
+							</div>
+							<div class="stats-detail">
+								<h3>8000</h3>
+								<p> Trees Number  </p>
+							</div>
+						</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+						<div class="info-tiles">
+							<a href="indexSupervisor.html">
+								<div class="info-icon">
+									<i class="bi bi-person-rolodex"></i>
+								</div>
+								<div class="stats-detail">
+									<h3>25</h3>
+									<p>Supervisor Num</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+						<div class="info-tiles">
+							<a href="indexWorker.html">
+							<div class="info-icon">
+								<i class="bi bi-people"></i>
+							</div>
+							<div class="stats-detail">
+								<h3>70</h3>
+								<p> Worker Num  </p>
+							</div>
+						</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+						<div class="info-tiles">
+							<a href="indexTasks.html">
+							<div class="info-icon">
+								<i class="bi bi-clipboard-data"></i>
+							</div>
+							<div class="stats-detail">
+								<h3>90k</h3>
+								<p>  Completed Tasks </p>
+							</div>
+						</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+						<div class="info-tiles">
+							<a href="indexTaskCompleted.html">
+							<div class="info-icon secondary">
+								<i class="bi bi-clipboard-check"></i>
+							</div>
+							<div class="stats-detail">
+								<h3>3k</h3>
+								<p> Current Task  </p>
+							</div>
+						</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+						<div class="info-tiles">
+							<a href="indexTaskNotCompleted.html">
+							<div class="info-icon secondary">
+								<i class="bi bi-clipboard-x"></i>
+							</div>
+							<div class="stats-detail">
+								<h3>64k</h3>
+								<p> Not Completed Task </p>
+							</div>
+						</a>
+						</div>
+					</div>
+				</div>
+				<!-- Row ends -->
 
-            <div class="card">
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>رقم الشكوى</th>
-                                    <th>رقم القطاع</th>
-                                    <th>رقم الوحدة</th>
-                                    <th>رقم الاشجار </th>
-                                    <th>عنوان الشكوى</th>
-                                    <th> حالة الشكوى</th> 
-                                    <th class="text-right">التاريخ</th>  
-                                    <th> تحميل الملف</th> 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>شكوى رقم ١</td>
-                                    <td>١٢</td>
-                                    <td>٢</td>
-                                    <td>١</td>
-                                    <td><span class="badge badge-danger">الجذر متضرر</span></td>
-                                    <td class="text-danger">درجة اولى</td>
-                                    <td class="text-right">Aug-10, 2019</td> 
-                                    <td><a href="img/pdf.pdf" download>تحميل الملف</a></td> 
-                                </tr>
-								<tr>
-                                    <td>1</td>
-                                    <td>شكوى رقم ١</td>
-                                    <td>١٢</td>
-                                    <td>٢</td>
-                                    <td>١</td>
-                                    <td><span class="badge badge-danger">الجذر متضرر</span></td>
-                                    <td class="text-danger">درجة اولى</td>
-                                    <td class="text-right">Aug-10, 2019</td> 
-                                    <td><a href="img/pdf.pdf" download>تحميل الملف</a></td> 
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+				<!-- Row starts -->
+				<div class="row gutters">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-hover table-bordered">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th> Worker Name</th>
+												<th>Responsibilities</th>
+												<th>Phone Number</th>
+												<th>Worker HandOver</th>
+												<th>Mission</th> 
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Rami Saleem</td>
+												<td>2000 Tree</td>
+												<td>+962 7787387302</td>
+												<td>200 </td> 
+												<td>ALL</td> 
+											</tr> 
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>	 
 
-        </div>
-    </div>
-    <!-- Row end -->
+					</div> 
+				</div>
+			 
 
-</div>
-            <!-- Main container end -->
+			</div>
+			<!-- Main container end -->
 
-        </div>
-        <!-- Page content end -->
+		</div>
+		<!-- Page content end -->
 
-    </div>
-    <!-- Page wrapper end -->
+	</div>
+	<!-- Page wrapper end -->
 
-    <!--**************************
-        **************************
-            **************************
-                        Required JavaScript Files
-            **************************
-        **************************
-    **************************-->
-    <!-- Required jQuery first, then Bootstrap Bundle JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/moment.js"></script>
+	<!-- Required jQuery first, then Bootstrap Bundle JS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/moment.js"></script>
 
+	<!-- Slimscroll JS -->
+	<script src="vendor/slimscroll/slimscroll.min.js"></script>
+	<script src="vendor/slimscroll/custom-scrollbar.js"></script>
 
-    <!-- *************
-        ************ Vendor Js Files *************
-    ************* -->
-    <!-- Slimscroll JS -->
-    <script src="vendor/slimscroll/slimscroll.min.js"></script>
-    <script src="vendor/slimscroll/custom-scrollbar.js"></script>
+	<!-- Daterange -->
+	<script src="vendor/daterange/daterange.js"></script>
+	<script src="vendor/daterange/custom-daterange.js"></script>
 
-    <!-- Daterange -->
-    <script src="vendor/daterange/daterange.js"></script>
-    <script src="vendor/daterange/custom-daterange.js"></script>
+	<!-- Chartist JS -->
+	<script src="vendor/chartist/js/chartist.min.js"></script>
+	<script src="vendor/chartist/js/chartist-tooltip.js"></script>
+	<script src="vendor/chartist/js/custom/threshold/threshold.js"></script>
+	<script src="vendor/chartist/js/custom/bar/bar-chart-orders.js"></script>
 
-    <!-- Chartist JS -->
-    <script src="vendor/chartist/js/chartist.min.js"></script>
-    <script src="vendor/chartist/js/chartist-tooltip.js"></script>
-    <script src="vendor/chartist/js/custom/bar/stack-bar-chart.js"></script>
-    <script src="vendor/chartist/js/custom/line/multiple-line-charts.js"></script>
+	<!-- jVector Maps -->
+	<script src="vendor/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+	<script src="vendor/jvectormap/world-mill-en.js"></script>
+	<script src="vendor/jvectormap/gdp-data.js"></script>
+	<script src="vendor/jvectormap/custom/world-map-markers2.js"></script>
 
-    <!-- jVector Maps -->
-    <script src="vendor/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
-    <script src="vendor/jvectormap/world-mill-en.js"></script>
-    <script src="vendor/jvectormap/gdp-data.js"></script>
-
-    <!-- Custom JVector Maps -->
-    <script src="vendor/jvectormap/custom/world-map-markers.js"></script>
-
-    <!-- Circliful js -->
-    <script src="vendor/circliful/circliful.min.js"></script>
-    <script src="vendor/circliful/circliful.custom.js"></script>
-
-    <!-- Rating JS -->
-    <script src="vendor/rating/raty.js"></script>
-    <script src="vendor/rating/raty-custom.js"></script>
+	<!-- Rating JS -->
+	<script src="vendor/rating/raty.js"></script>
+	<script src="vendor/rating/raty-custom.js"></script>
 
 
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
 
 </body>
+
 </html>

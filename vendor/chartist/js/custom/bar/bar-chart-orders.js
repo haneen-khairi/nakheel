@@ -1,17 +1,15 @@
 new Chartist.Bar('.barChartOrders', {
-	labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+	labels: ['Not Completed Tasks', 'Completed Tasks' , 'Total Tasks' ],
 	series: [
+		// [
+		// 	{meta: 'Online', value: 9000},
+		// 	{meta: 'Online', value: 200},
+		// 	{meta: 'Online', value: 1000}, 
+		// ],
 		[
-			{meta: 'Online', value: 2000},
-			{meta: 'Online', value: 4000},
-			{meta: 'Online', value: 6000},
-			{meta: 'Online', value: 8000},
-		],
-		[
-			{meta: 'Direct', value: 3000},
-			{meta: 'Direct', value: 5000},
-			{meta: 'Direct', value: 7000},
-			{meta: 'Direct', value: 9000},
+			{meta: 'Total Tasks', value: 7000}, 
+			{meta: 'Completed Tasks', value: 5000},
+			{meta: 'Not Completed Tasks', value: 3000},
 		],
 	],
 }, {

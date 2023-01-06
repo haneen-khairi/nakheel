@@ -35,7 +35,7 @@ body {
     overflow: hidden; }
 
 /*************** Loading ***************/
-#loading-wrapper {
+# {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,7 +46,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
-  #loading-wrapper .spinner-border {
+  # .spinner-border {
     width: 3rem;
     height: 3rem;
     color: #ffffff; }
@@ -793,7 +793,7 @@ ul.header-tasks:last-child {
             border-color: transparent #e1e3f0 transparent transparent; }
         .page-wrapper .sidebar-wrapper .sidebar-menu ul li.active .sidebar-submenu {
           display: block; }
-      .page-wrapper .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
+      .page-wrapper .sidebar-wrapper .sidebar-menu . > a:after {
         font-family: "icomoon";
         font-weight: 700;
         font-size: .8rem;
@@ -806,19 +806,19 @@ ul.header-tasks:last-child {
         transition: -webkit-transform .3s ease;
         transition: transform .3s ease;
         transition: transform .3s ease, -webkit-transform .3s ease; }
-      .page-wrapper .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu {
+      .page-wrapper .sidebar-wrapper .sidebar-menu . .sidebar-submenu {
         display: none; }
-        .page-wrapper .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
+        .page-wrapper .sidebar-wrapper .sidebar-menu . .sidebar-submenu ul {
           padding: 0; }
-          .page-wrapper .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul li a {
+          .page-wrapper .sidebar-wrapper .sidebar-menu . .sidebar-submenu ul li a {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             padding: 9px 15px 9px 15px;
             font-size: .725rem; }
-            .page-wrapper .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul li a:hover {
+            .page-wrapper .sidebar-wrapper .sidebar-menu . .sidebar-submenu ul li a:hover {
               background: #ebeff5; }
-      .page-wrapper .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
+      .page-wrapper .sidebar-wrapper .sidebar-menu ..active > a:after {
         -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg);
         right: 40px; }

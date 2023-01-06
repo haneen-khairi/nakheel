@@ -83,7 +83,7 @@
 									</li>
 									<li>
 										<a href="qa-analysis.html" class="tab-total"> <i class="icon-bar-chart-2"></i>
-											   QA Analysis </a>
+											   Estimate Analysis </a>
 									</li>
 								</ul>
 							</div>
@@ -99,8 +99,11 @@
 										<a href="supervisor/super-task-table.html">Tasks</a>
 									</li>
 									<li>
-										<a href="supervisor/super-report-table.html">Reports</a>
-									</li> 
+										<a href="supervisor/super-report-table.html">Complaints Reports</a>
+									</li>
+									<li>
+										<a href="supervisor/super-report.html"> Report</a>
+									</li>
 									<li>
 										<a href="supervisor/super-supply-table.html"> Supplies Report</a>
 									</li>
@@ -222,7 +225,26 @@
 					<li class="breadcrumb-item">Dashboards</li>
 					<li class="breadcrumb-item active">Admin Dashboard</li>
 				</ol>
- 
+
+				<ul class="app-actions">
+					<li>
+						<a href="#" id="reportrange">
+							<span class="range-text"></span>
+							<i class="icon-chevron-down"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Print">
+							<i class="icon-print"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="tooltip" data-placement="top" title=""
+							data-original-title="Download CSV">
+							<i class="icon-cloud_download"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<!-- Page header end -->
 
@@ -314,58 +336,39 @@
 
 				<!-- Row starts -->
 				<div class="row gutters">
-					<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
-						<div class="card h-280">
-							<div class="card-header">
-								<div class="card-title">Missions</div>
-							</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="card">
 							<div class="card-body">
-								<div class="chartist bar-scheme-one">
-									<div class="barChartOrders"></div>
-								</div>
-								<div class="row gutters justify-content-center">
-									<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
-										<div class="info-stats m-0">
-											<span class="info-label"></span>
-											<p class="info-title">Tasks</p>
-											<h3 class="info-total">950k</h3>
-										</div>
-									</div> 
-									<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
-										<div class="info-stats m-0">
-											<span class="info-label secondary"></span>
-											<p class="info-title">Completed Tasks</p>
-											<h3 class="info-total">300k</h3>
-										</div>
-									</div>
-									<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
-										<div class="info-stats m-0">
-											<span class="info-label  "></span>
-											<p class="info-title">Not Completed Tasks</p>
-											<h3 class="info-total">300k</h3>
-										</div>
-									</div>
+								<div class="table-responsive">
+									<table class="table table-hover table-bordered">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th> Supervisor Name</th>
+												<th>Responsibilities</th>
+												<th>Phone Number</th>
+												<th>Worker HandOver</th>
+												<th>Mission</th> 
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Adam Saleem</td>
+												<td>2000 Tree</td>
+												<td>+962 7787387302</td>
+												<td>200 </td> 
+												<td>ALL</td> 
+											</tr> 
+										</tbody>
+									</table>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
-						<div class="card h-280 agenda-bg">
-						</div>
-					</div>
-					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <div class="card h-250">
-                            <div class="card-header">
-                                <div class="card-title">Tree Condition</div>
-                            </div>
-                            <div class="card-body pb-0 m-auto">
-                                <div id="budget"></div>
-                            </div>
-                        </div>
-                    </div>
+						</div>	  
+					</div> 
 				</div>
-				<!-- Row end -->
- 
+			 
+
 			</div>
 			<!-- Main container end -->
 
@@ -403,11 +406,6 @@
 	<!-- Rating JS -->
 	<script src="vendor/rating/raty.js"></script>
 	<script src="vendor/rating/raty-custom.js"></script>
-	<script src="vendor/apex/apexcharts.min.js"></script>
-    <script src="vendor/apex/project-dashboard/timeline.js"></script>
-    <script src="vendor/apex/project-dashboard/avg-handle-time.js"></script>
-    <script src="vendor/apex/project-dashboard/budget.js"></script>
-    <script src="vendor/apex/project-dashboard/tasks-assigned.js"></script>
 
 
 	<!-- Main JS -->

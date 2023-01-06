@@ -3,7 +3,7 @@ var options = {
 		width: 259,
 		type: 'donut',
 	},
-	labels: ['Total Budget', 'Amount Used', 'Remaining Amount'],
+	labels: ['Good', 'Bad', 'Dead'],
 	series: [60000, 45000, 15000],
 	legend: {
 		position: 'bottom',
@@ -18,7 +18,7 @@ var options = {
 	tooltip: {
 		y: {
 			formatter: function(val) {
-				return  "$" + val
+				return  "" + val
 			}
 		}
 	},

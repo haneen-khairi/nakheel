@@ -20,9 +20,9 @@ $(function() {
 
 
 // Loading
-$(function() {
-	$("#loading-wrapper").fadeOut(3000);
-});
+// $(function() {
+// 	$("#").fadeOut(3000);
+// });
 
 
 
@@ -160,13 +160,13 @@ $(function () {
 jQuery(function ($) {
 
 	// Dropdown menu
-	$(".sidebar-dropdown > a").click(function () {
+	$(". > a").click(function () {
 		$(".sidebar-submenu").slideUp(200);
 		if ($(this).parent().hasClass("active")) {
-			$(".sidebar-dropdown").removeClass("active");
+			$(".").removeClass("active");
 			$(this).parent().removeClass("active");
 		} else {
-			$(".sidebar-dropdown").removeClass("active");
+			$(".").removeClass("active");
 			$(this).next(".sidebar-submenu").slideDown(200);
 			$(this).parent().addClass("active");
 		}

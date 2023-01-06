@@ -14,10 +14,6 @@
 	<!-- Title -->
 	<title>Royal Commission for Alula Dashboard</title>
 
-
-	<!-- *************
-			************ Common Css Files *************
-		************ -->
 	<!-- Bootstrap css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -27,20 +23,25 @@
 	<!-- Main css -->
 	<link rel="stylesheet" href="css/main.css">
 
-
-	<!-- *************
-			************ Vendor Css Files *************
-		************ -->
 	<!-- DateRange css -->
 	<link rel="stylesheet" href="vendor/daterange/daterange.css" />
 
 	<!-- Chartist css -->
 	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css" />
 	<link rel="stylesheet" href="vendor/chartist/css/chartist-custom.css" />
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
+
+	<!-- Loading starts -->
+	<!-- <div id="">
+		<div class="spinner-border" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div> -->
+	<!-- Loading ends -->
+
 
 	<!-- Page wrapper start -->
 	<div class="page-wrapper">
@@ -64,110 +65,104 @@
 				<!-- sidebar menu start -->
 				<div class="sidebar-menu">
 					<ul>
-						<li class="header-menu">General</li>
-						<li class="sidebar-dropdown active">
-							<a href="#">
-								<i class="icon-devices_other"></i>
-								<span class="menu-text">Dashboards</span>
-							</a>
+						<li class="header-menu">Dashboard</li>
+						<li class="">
 							<div class="sidebar-submenu">
 								<ul>
 									<li>
-										<a href="index.html" class="current-page"> تحليلات المشروع الكلي</a>
+										<a href="index.html" class="current-page tab-total"><i
+												class="icon-multiline_chart"></i>Project Total Analysis</a>
 									</li>
 									<li>
-										<a href="main-analysis.html">تحليلات العاملين</a>
+										<a href="main-analysis.html" class="tab-total"><i
+												class="icon-pie_chart_outlined"></i>Worker Analysis</a>
 									</li>
 									<li>
-										<a href="super-analysis.html">تحليلات المسؤولين</a>
+										<a href="super-analysis.html" class="tab-total"> <i class="icon-bar-chart"></i>
+											   Supervisor Analysis</a>
 									</li>
 									<li>
-										<a href="qa-analysis.html">تحليلات التقييم </a>
-									</li> 
+										<a href="qa-analysis.html" class="tab-total"> <i class="icon-bar-chart-2"></i>
+											   Estimate Analysis </a>
+									</li>
 								</ul>
 							</div>
 						</li>
-						<li class="sidebar-dropdown">
-							<a href="#">
-								<i class="icon-check-circle"></i>
+						<li>
+							<a href="#" class="main-dash">
+								<i class="icon-user"></i>
 								<span class="menu-text">Supervisor</span>
 							</a>
 							<div class="sidebar-submenu">
 								<ul>
 									<li>
-										<a href="account-settings.html">Account Settings</a>
+										<a href="supervisor/super-task-table.html">Tasks</a>
 									</li>
 									<li>
-										<a href="supervisor/super-task-table.html">المهام</a>
+										<a href="supervisor/super-report-table.html">Complaints Reports</a>
 									</li>
 									<li>
-										<a href="supervisor/super-report-table.html">الشكاوي </a>
+										<a href="supervisor/super-report.html"> Report</a>
 									</li>
 									<li>
-										<a href="supervisor/super-report.html"> التقارير</a>
+										<a href="supervisor/super-supply-table.html"> Supplies Report</a>
 									</li>
-									<li>
-										<a href="supervisor/super-supply-table.html">عرض الموارد</a>
-									</li> 
-									<li>
-										<a href="supervisor/super-db-table.html">قاعدة البيانات</a>
-									</li> 
 								</ul>
 							</div>
 						</li>
-						<li class="sidebar-dropdown">
-							<a href="#">
-								<i class="icon-book-open"></i>
+						<li>
+							<a href="#" class="main-dash">
+								<i class="icon-user-check"></i>
 								<span class="menu-text">Quality controller</span>
 							</a>
 							<div class="sidebar-submenu">
-								<ul> 
+								<ul>
 									<div class="sidebar-submenu">
 										<ul>
 											<li>
-												<a href="qa/qa-water-report.html">مهام الري</a>
+												<a href="qa/qa-water-report.html">Irrigation Tasks</a>
 											</li>
 											<li>
-												<a href="qa/qa-care-report.html"> مهام الرعاية </a>
+												<a href="qa/qa-care-report.html">  Care Tasks</a>
 											</li>
 											<li>
-												<a href="qa/qa-report-table.html"> مهام التقييم </a>
-											</li> 
+												<a href="qa/qa-report-table.html"> Evaluation Report   </a>
+											</li>
 											<li>
-												<a href="qa/qa-more-report.html"> مهام اخرى</a>
-											</li>  
+												<a href="qa/qa-more-report.html">Other Tasks</a>
+											</li>
 										</ul>
 									</div>
 								</ul>
 							</div>
-						</li> 
-						<li class="sidebar-dropdown">
-							<a href="#">
-								<i class="icon-book-open"></i>
+						</li>
+						<li>
+							<a href="#" class="main-dash">
+								<i class="icon-group_add"></i>
 								<span class="menu-text">Worker</span>
 							</a>
 							<div class="sidebar-submenu">
-								<ul> 
+								<ul>
 									<div class="sidebar-submenu">
 										<ul>
 											<li>
-												<a href="worker/worker-task-table.html">عرض المهام </a>
+												<a href="worker/worker-task-table.html"> Tasks </a>
 											</li>
-											 
+
 											<li>
-												<a href="worker/worker-report-table.html">  الشكاوي المقدمة</a>
-											</li>  
+												<a href="worker/worker-report-table.html"> Irrigation Report </a>
+											</li>
 										</ul>
 									</div>
 								</ul>
 							</div>
-						</li> 
-						<li class="sidebar-dropdown">
-							<a href="Map.html">
+						</li>
+						<li>
+							<a href="Map.html" class="main-dash">
 								<i class="icon-map-pin"></i>
 								<span class="menu-text">Map</span>
 							</a>
-						</li> 
+						</li>
 					</ul>
 				</div>
 				<!-- sidebar menu end -->
@@ -175,19 +170,16 @@
 			</div>
 			<!-- Sidebar content end -->
 		</nav>
-		<!-- Si wrapper end -->
+		<!-- Sidebar wrapper end -->
 
 		<!-- Page content start  -->
 		<div class="page-content">
 
 			<!-- Header start -->
 			<header class="header">
-				<div class="toggle-btns">
-					<a id="toggle-sidebar" href="#">
-						<i class="icon-list"></i>
-					</a>
+				<div class="toggle-btns"> 
 					<a id="pin-sidebar" href="#">
-						<i class="icon-list"></i>
+						 عربي
 					</a>
 				</div>
 				<div class="header-items">
@@ -199,95 +191,7 @@
 					<!-- Custom search end -->
 
 					<!-- Header actions start -->
-					<ul class="header-actions">
-						<li class="dropdown">
-							<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
-								<i class="icon-box"></i>
-							</a>
-							<div class="dropdown-menu dropdown-menu-right lrg" aria-labelledby="notifications">
-								<div class="dropdown-menu-header">
-									Tasks (05)
-								</div>
-								<ul class="header-tasks">
-									<li>
-										<p>#48 - Dashboard UI<span>90%</span></p>
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
-												aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-												<span class="sr-only">90% Complete (success)</span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<p>#95 - Alignment Fix<span>60%</span></p>
-										<div class="progress">
-											<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60"
-												aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-												<span class="sr-only">60% Complete (success)</span>
-											</div>
-										</div>
-									</li>
-									<li>
-										<p>#7 - Broken Button<span>40%</span></p>
-										<div class="progress">
-											<div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="40"
-												aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-												<span class="sr-only">40% Complete (success)</span>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="dropdown">
-							<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
-								<i class="icon-bell"></i>
-								<span class="count-label">8</span>
-							</a>
-							<div class="dropdown-menu dropdown-menu-right lrg" aria-labelledby="notifications">
-								<div class="dropdown-menu-header">
-									Notifications (40)
-								</div>
-								<ul class="header-notifications">
-									<li>
-										<a href="#">
-											<div class="user-img away">
-												<img src="../img/user21.png" alt="User">
-											</div>
-											<div class="details">
-												<div class="user-title">Abbott</div>
-												<div class="noti-details">Membership has been ended.</div>
-												<div class="noti-date">Oct 20, 07:30 pm</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="user-img busy">
-												<img src="../img/user10.png" alt="User">
-											</div>
-											<div class="details">
-												<div class="user-title">Braxten</div>
-												<div class="noti-details">Approved new design.</div>
-												<div class="noti-date">Oct 10, 12:00 am</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="user-img online">
-												<img src="../img/user6.png" alt="User">
-											</div>
-											<div class="details">
-												<div class="user-title">Larkyn</div>
-												<div class="noti-details">Check out every table in detail.</div>
-												<div class="noti-date">Oct 15, 04:00 pm</div>
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
+					<ul class="header-actions"> 
 						<li class="dropdown">
 							<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown"
 								aria-haspopup="true">
@@ -298,9 +202,9 @@
 								<div class="header-profile-actions">
 									<div class="header-user-profile">
 										<div class="header-user">
-											<img src="../img/user.png" alt="Admin Template">
+											<img src="img/user.png" alt="Admin Template">
 										</div>
-										<h5>ايمن  </h5>
+										<h5>ايمن </h5>
 										<p>Admin</p>
 									</div>
 									<a href="user-profile.html"><i class="icon-user1"></i> My Profile</a>
@@ -344,10 +248,10 @@
 			</div>
 			<!-- Page header end -->
 
-
 			<!-- Main container start -->
-            <div class="main-container">
-                					<!-- Row starts -->
+			<div class="main-container">
+				
+			<!-- Row starts -->
 					<div class="row gutters">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 							<div class="card">
@@ -360,43 +264,30 @@
 									<div class="row gutters">
 										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
 											<div class="ticket-status-card">
-												<h6>Unresolved</h6>
+												<h6>Total Tasks</h6>
 												<h3>5290</h3>
 											</div>
 										</div>
 										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
 											<div class="ticket-status-card">
-												<h6>Overdue</h6>
+												<h6>Done Tasks</h6>
 												<h3>770</h3>
 											</div>
 										</div>
 										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
 											<div class="ticket-status-card">
-												<h6>Due Today</h6>
+												<h6>Pending Tasks </h6>
 												<h3>25</h3>
 											</div>
 										</div>
 										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
 											<div class="ticket-status-card">
-												<h6>Open</h6>
+												<h6>Total Tasks </h6>
 												<h3>1800</h3>
 											</div>
-										</div>
-										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
-											<div class="ticket-status-card">
-												<h6>On Hold</h6>
-												<h3>450</h3>
-											</div>
-										</div>
-										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
-											<div class="ticket-status-card">
-												<h6>Unassigned</h6>
-												<h3>275</h3>
-											</div>
-										</div>
+										</div> 
 									</div>
-									<!-- Row ends -->
-
+									<!-- Row ends --> 
 								</div>
 							</div>
 						</div>
@@ -407,157 +298,38 @@
 					<div class="row gutters">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 							<div class="card">
-								<div class="card-header">
-									<div class="card-title">Tickets</div>
-								</div>
 								<div class="card-body">
-									<div class="custom-btn-group" role="group">
-										<button type="button" class="btn btn-outline-primary btn-sm btn-rounded">Today</button>
-										<button type="button" class="btn btn-outline-primary btn-sm btn-rounded">Yesterday</button>
-										<button type="button" class="btn btn-outline-primary btn-sm btn-rounded">Last Week</button>
-										<button type="button" class="btn btn-outline-secondary btn-sm btn-rounded">Month</button>
+									<div class="table-responsive">
+										<table class="table table-hover table-bordered">
+											<thead>
+												<tr>
+													<th>#</th>
+													<th> QA Name</th>
+													<th>Responsibilities</th>
+													<th>Tasks Assigned</th>
+													<th>Pending Tasks</th>
+													<th>Not Finished Tasks</th> 
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Adam Saleem</td>
+													<td>22 Tasks</td>
+													<td>2</td>
+													<td>3 </td> 
+													<td>1</td> 
+												</tr> 
+											</tbody>
+										</table>
 									</div>
-									<div id="tickets"></div>
 								</div>
-							</div>
-						</div>
+							</div>	  
+						</div> 
 					</div>
 					<!-- Row ends -->
 
-					<!-- Row starts -->
-					<div class="row gutters">
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-							<div class="card h-250">
-								<div class="card-header">
-									<div class="card-title">Support Requests</div>
-								</div>
-								<div class="card-body pt-0">
-									<div id="support-requests"></div>
-									<p class="text-center">
-										<small class="text-success">*Received highest number of requests on Saturday.</small>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-							<div class="card h-250">
-								<div class="card-header">
-									<div class="card-title">Complaints</div>
-								</div>
-								<div class="card-body pt-0">
-									<div id="complaints"></div>
-									<p class="text-center">
-										<small class="text-danger">*Received highest number of complaints on Saturday.</small>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-							<div class="overview-box2 h-250">
-								<i class="icon-alarm_on"></i>
-								<h5>Time to resolve complaint</h5>
-								<h4>7m:30s</h4>
-								<p>(Goal: 7m:0s)</p>
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-							<div class="overview-box2 orange h-250">
-								<i class="icon-av_timer"></i>
-								<h5>Average speed of answer</h5>
-								<h4>0m:15s</h4>
-							</div>
-						</div>
-					</div>
-					<!-- Row ends -->
-
-					<!-- Row starts -->
-					<div class="row gutters">
-						<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-							<div class="card h-320">
-								<div class="card-header">
-									<div class="card-title">Avg Cost Per Support</div>
-								</div>
-								<div class="card-body pt-0">
-									<div id="cost-per-support"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-							<div class="card h-320">
-								<div class="card-header">
-									<div class="card-title">Traffic Analysis</div>
-								</div>
-								<div class="card-body">
-									<div id="traffic-analysis"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-							<div class="card h-320">
-								<div class="card-header">
-									<div class="card-title">Customer Ratings</div>
-								</div>
-								<div class="card-body pb-0">
-									<div class="user-ratings">
-										<div class="total-ratings">
-											<h2>5.0</h2>
-											<div class="rating-stars">
-												<div id="rate2"></div>
-											</div>
-										</div>
-										<div class="ratings-list-container">
-											<div class="ratings-list">
-												<div class="rating-level">5.0</div>
-												<div class="rating-stars">
-													<div class="rateA"></div>
-												</div>
-												<div class="total">
-													8,500 <span class="percentage">85%</span>
-												</div>
-											</div>
-											<div class="ratings-list">
-												<div class="rating-level">4.0</div>
-												<div class="rating-stars">
-													<div class="rateB"></div>
-												</div>
-												<div class="total">
-													1,000 <span class="percentage">10%</span>
-												</div>
-											</div>
-											<div class="ratings-list">
-												<div class="rating-level">3.0</div>
-												<div class="rating-stars">
-													<div class="rateC"></div>
-												</div>
-												<div class="total">
-													300 <span class="percentage">03%</span>
-												</div>
-											</div>
-											<div class="ratings-list">
-												<div class="rating-level">2.0</div>
-												<div class="rating-stars">
-													<div class="rateD"></div>
-												</div>
-												<div class="total">
-													200 <span class="percentage">02%</span>
-												</div>
-											</div>
-											<div class="ratings-list">
-												<div class="rating-level">1.0</div>
-												<div class="rating-stars">
-													<div class="rateE"></div>
-												</div>
-												<div class="total">
-													100 <span class="percentage">01%</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Row ends -->
+				 
 
 				</div>
 				<!-- Main container end -->
